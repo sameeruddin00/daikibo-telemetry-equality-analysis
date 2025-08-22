@@ -26,7 +26,7 @@ This project analyzes telemetry data from Daikibo factories to identify machine 
 - Created calculated field Unhealthy (10 minutes per unhealthy message).
 - Created bar charts:
    - Down Time per Factory
-     - Down Time per Device Type
+   - Down Time per Device Type
 - Built a dashboard connecting the two charts to filter by factory.
 - Gender Equality Classification
   - Added a new column Equality Class in Excel.
