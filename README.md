@@ -1,50 +1,37 @@
 # Daikibo Telemetry & Gender Equality Analysis
-Project Overview
-
 This project analyzes telemetry data from Daikibo factories to identify machine downtime patterns and evaluates gender pay equality across job roles. The analysis was performed using Tableau for visualization and Excel for data classification.
 
-Project Objectives
+## Project Objectives
 
-Telemetry Analysis
+1. Telemetry Analysis
+   - Identify which factory experiences the most machine downtime.
+    - Determine which types of machines break most frequently.
 
-Identify which factory experiences the most machine downtime.
+2. Gender Pay Equality Analysis
+    - Classify job roles into categories based on equality scores:
+     - Fair: Score between -10 and +10
+     - Unfair: Score < -10 or > 10
+      - Highly Discriminative: Score < -20 or > 20
 
-Determine which types of machines break most frequently.
+## Data Description
 
-Gender Pay Equality Analysis
+- Telemetry Data: JSON file containing machine status messages every 10 minutes from 4 factories over one month.
 
-Classify job roles into categories based on equality scores:
+- Equality Data: Excel file with factory, job role, and equality score.
 
-Fair: Score between -10 and +10
+## Methods
 
-Unfair: Score < -10 or > 10
-
-Highly Discriminative: Score < -20 or > 20
-
-Data Description
-
-Telemetry Data: JSON file containing machine status messages every 10 minutes from 4 factories over one month.
-
-Equality Data: Excel file with factory, job role, and equality score.
-
-Methods
-
-Telemetry Analysis in Tableau
-
-Imported JSON data.
-
-Created calculated field Unhealthy (10 minutes per unhealthy message).
-
-Created bar charts:
-
-Down Time per Factory
-
-Down Time per Device Type
-
-Built a dashboard connecting the two charts to filter by factory.
-
-Gender Equality Classification
-
-Added a new column Equality Class in Excel.
-
-Classified equality scores according to the thresholds above.
+- Telemetry Analysis in Tableau
+- Imported JSON data.
+- Created calculated field Unhealthy (10 minutes per unhealthy message).
+- Created bar charts:
+   - Down Time per Factory
+     - Down Time per Device Type
+- Built a dashboard connecting the two charts to filter by factory.
+- Gender Equality Classification
+  - Added a new column Equality Class in Excel.
+  - Classified equality scores according to the thresholds above.
+## Files Included
+- Daikibo_Telemetry_Analysis.twbx – Tableau workbook with dashboards.
+- Equality Table.xlsx – Excel file with equality classifications.
+- Screenshots/ – Optional folder with screenshots of dashboards.
